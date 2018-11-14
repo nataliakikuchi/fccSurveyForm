@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Survey <Form></Form></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-</head>
-<body>
-    
-    <nav id="top-bar">
-        <div>
-            <a href="#"><img src="img/logo.png" alt="Imagem de uma engrenagem e de um ser humano representando que pessoas e tecnologia trabalham juntos."></a>
-        </div>
-    </nav>
-    <main>
-        <section>
-    <h1 id="title">Survey Form</h1>
-    <div>
-        <p id="description">Let us know how we can improve freeCodeCamp</p>
-    </div>
-        </section>
-        <section>
-    <div>
-        <form id="survey-form" method="POST" action="https://google.com">
-            <label id="name" for="name">* Nome: </label>
-            <input name="nomeUsuario" type="text">
-            <input type="password" name="senha">
-            <button>enviar</button>
-        </form>
-    </div>
-</section>
-    </main>    
-<footer>&copy; 2018 Made with <img id="heart" src="img/heart.png" alt="Coraçãozinho"> by Natália Kikuchi</footer>
-
-<script src="js/script.js" type="text/javascript"></script>    
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey <Form></Form></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/footer.css">
+    </head>
+    <body>
+        <nav id="top-bar">
+            <div>
+                <a href="#"><img src="img/logo.png" alt="Imagem de uma engrenagem e de um ser humano representando que pessoas e tecnologia trabalham juntos."></a>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <h1 id="title">Survey Form</h1>
+                <div>
+                    <p id="description">Let us know how we can improve freeCodeCamp</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <form id="survey-form" method="POST" action="https://google.com">
+                        <div class="rawTab">
+                            <div class="labels">
+                                <label id="name-label" for="name">* Nome: </label>
+                            </div>   
+                            <div class="rightTab">
+                                <input id="name" type="text" name="nomeUsuario">
+                            </div> 
+                        </div>
+                        
+                        <button>enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>    
+    <footer>&copy; 2018 Made with <img id="heart" src="img/heart.png" alt="Coraçãozinho"> by Natália Kikuchi</footer>
+    <script src="js/script.js" type="text/javascript"></script>    
+    </body>
 </html>
