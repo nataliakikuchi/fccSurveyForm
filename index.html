@@ -17,7 +17,7 @@
             <section>
                 <h1 id="title">Survey Form</h1>
                 <div>
-                    <p id="description">Let us know how we can improve freeCodeCamp</p>
+                    <p id="description">Nos diga como podemos melhorar ainda mais nossos serviços</p>
                 </div>
             </section>
             <section>
@@ -28,8 +28,45 @@
                                 <label id="name-label" for="name">* Nome: </label>
                             </div>   
                             <div class="rightTab">
-                                <input id="name" type="text" name="nomeUsuario">
+                                <input id="name" type="text" name="nomeUsuario" required placeholder="Digite seu nome">
                             </div> 
+                        </div>
+                        <div class="rawTab">
+                            <div class="labels">
+                                <label id="email-label" for="email">* Email: </label>
+                            </div>   
+                            <div class="rightTab">
+                                <input id="email" type="email" name="emailUsuario" required placeholder="Digite seu email">
+                            </div> 
+                        </div>
+                        <div class="rawTab">
+                            <div class="labels">
+                                <label id="age-label" for="number">* Idade: </label>
+                            </div>   
+                            <div class="rightTab">
+                                <input id="number" min="1" max="125" type="number" name="idadeUsuario" required placeholder="Digite sua idade">
+                            </div> 
+                        </div>
+                        <div class="rawTab">
+                            <div class="labels">
+                                <label id="zip-label" for="zipCode">* CEP: </label>
+                            </div>   
+                            <div class="rightTab">
+                                <input id="zipCode" type="number" name="cepUsuario" required placeholder="Digite seu CEP">
+                            </div> 
+                        </div>
+                        <div class="labels">
+                            <label for="currentPos">Qual dessas opções melhor descreve sua atual posição?</label>
+                        </div>
+                        <div class="rightTab">
+                            <select id="dropdown" name="atualPosicaoUsuario" class="dropdown">
+                                <option disabled value>Selecione uma opção</option>
+                                <option value="student">Estudante</option>
+                                <option value="job">Trabalho</option>
+                                <option value="studyAndWork">Estudo e trabalho</option>
+                                <option value="preferNo">Prefiro não dizer</option>
+                                <option value="other">Outro</option>
+                            </select>
                         </div>
                         
                         <button>enviar</button>
