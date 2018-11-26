@@ -1,0 +1,18 @@
+#top-bar {
+  position: fixed;
+  left: 50px;
+
+}
+
+#top-bar img {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+#top-bar h1 {
+  float: right;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
