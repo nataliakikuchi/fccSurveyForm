@@ -24,164 +24,165 @@
     <section>
       <div>
         <form id="survey-form" method="POST" action="https://google.com">
-          <div class="rowTab">
+          <div class="personalInfo">
+            <div class="rowTab">
+              <div class="labels">
+                <label id="name-label" for="name">* Nome: </label>
+              </div>   
+              <div class="rightTab">
+                <input id="name" type="text" name="nomeUsuario" required placeholder="Digite seu nome">
+              </div> 
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="email-label" for="email">* Email: </label>
+              </div>   
+              <div class="rightTab">
+                <input id="email" type="email" name="emailUsuario" required placeholder="Digite seu email">
+              </div> 
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="age-label" for="number">* Idade: </label>
+              </div>   
+              <div class="rightTab">
+                <input id="number" min="1" max="125" type="number" name="idadeUsuario" required placeholder="Digite sua idade">
+              </div> 
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="zip-label" for="zipCode">* CEP: </label>
+              </div>   
+            </div>  
+              <div class="rightTab">
+                <input id="zipCode" type="number" name="cepUsuario" required placeholder="Digite seu CEP">
+              </div> 
+            </div>
             <div class="labels">
-              <label id="name-label" for="name">* Nome: </label>
-            </div>   
-            <div class="rightTab">
-              <input id="name" type="text" name="nomeUsuario" required placeholder="Digite seu nome">
-            </div> 
-          </div>
-          <div class="rowTab">
-            <div class="labels">
-              <label id="email-label" for="email">* Email: </label>
-            </div>   
-            <div class="rightTab">
-              <input id="email" type="email" name="emailUsuario" required placeholder="Digite seu email">
-            </div> 
-          </div>
-          <div class="rowTab">
-            <div class="labels">
-              <label id="age-label" for="number">* Idade: </label>
-            </div>   
-            <div class="rightTab">
-              <input id="number" min="1" max="125" type="number" name="idadeUsuario" required placeholder="Digite sua idade">
-            </div> 
-          </div>
-          <div class="rowTab">
-            <div class="labels">
-              <label id="zip-label" for="zipCode">* CEP: </label>
-            </div>   
-            <div class="rightTab">
-              <input id="zipCode" type="number" name="cepUsuario" required placeholder="Digite seu CEP">
-            </div> 
-          </div>
-          <div class="labels">
-            <label for="dropdown">Qual dessas opções melhor descreve sua atual posição?</label>
-          </div>
-          <div class="rightTab">
-            <select id="dropdown" name="atualPosicaoUsuario" class="dropdown">
-              <option disabled value>Selecione uma opção</option>
-              <option value="student">Estudante</option>
-              <option value="job">Trabalho</option>
-              <option value="studyAndWork">Estudo e trabalho</option>
-              <option value="preferNo">Prefiro não dizer</option>
-              <option value="other">Outro</option>
-            </select>
-          </div>
-          <div class="rowTab">
-            <div class="labels">
-              <label for="userRating">Você recomendaria nossos cursos para uma amiga?</label>
+              <label for="dropdown">Qual dessas opções melhor descreve sua atual posição?</label>
             </div>
             <div class="rightTab">
-              <ul>
-                <li class="radio">
-                  <label>
-                    <input name="radio-buttons" value="1" type="radio" class="userRating">Com certeza 
-                  </label>
-                </li>
-                <li class="radio">
-                  <label>
-                    <input name="radio-buttons" value="2" type="radio" class="userRating">Talvez 
-                  </label>
-                </li>
-                <li class="radio">
-                  <label>
-                    <input name="radio-buttons" value="3" type="radio" class="userRating">Não 
-                  </label>
-                </li>
-              </ul> 
+              <select id="dropdown" name="atualPosicaoUsuario" class="dropdown">
+                <option disabled value>Selecione uma opção</option>
+                <option value="student">Estudante</option>
+                <option value="job">Trabalho</option>
+                <option value="studyAndWork">Estudo e trabalho</option>
+                <option value="preferNo">Prefiro não dizer</option>
+                <option value="other">Outro</option>
+              </select>
+            </div>
+            <div class="rowTab">
               <div class="labels">
-                <label for="dropdownPreferences">O que você prefere em nossa plataforma?</label>
+                <label for="userRating">Você recomendaria nossos cursos para uma amiga?</label>
               </div>
               <div class="rightTab">
-                <select id="dropdownPreferences" name="oQueUsuarioPrefere" class="dropdown">
-                  <option disabled value>Selecione uma opção</option>
-                  <option value="challenge">Desafios</option>
-                  <option value="project">Projetos</option>
-                  <option value="community">Comunidade</option>
-                  <option value="openSource">Open Source</option>
-                  <option value="other">Outro</option>
-                </select>
-              </div>    
-            </div>
-          </div>  
-          <div class="rowTab">
-            <div class="labels">
-              <label for="improvedPreferences">
-                Itens que podem ser melhorados no futuro.
-                <br>
-                (É possível escolher mais de uma opção):
-              </label>
-            </div>
-            <div class="rightTab">
-              <ul id="improvedPreferences">
-                <li class="checkbox">
-                  <label>
-                    <input name="prefer" value="1" type="checkbox" class="userRatings">Projetos Front-end
-                  </label>
-                </li>
-                <li class="checkbox">
-                  <label>
-                    <input name="prefer" value="2" type="checkbox" class="userRatings">Projetos Back-end
-                  </label>
-                </li>
-                <li class="checkbox">
-                  <label>
-                    <input name="prefer" value="3" type="checkbox" class="userRatings">Visualização de dados
-                  </label>
-                </li>
-                <li class="checkbox">
-                  <label>
-                    <input name="prefer" value="4" type="checkbox" class="userRatings">Challenges
-                  </label>
-                </li>
-                <li class="checkbox">
-                  <label>
-                    <input name="prefer" value="5" type="checkbox" class="userRatings">Comunidade Open Source
-                  </label>
-                </li>
-                <li class="checkbox">
-                  <label>
-                    <input name="prefer" value="6" type="checkbox" class="userRatings">Salas de ajuda
-                  </label>
-                </li>
-                <li class="checkbox">
-                  <label>
-                    <input name="prefer" value="7" type="checkbox" class="userRatings">Vídeos
-                  </label>
-                </li>
-                <li class="checkbox">
-                  <label>
-                    <input name="prefer" value="8" type="checkbox" class="userRatings">Meetups
-                  </label>
-                </li>
-                <li class="checkbox">
-                  <label>
-                    <input name="prefer" value="9" type="checkbox" class="userRatings">Wiki
-                  </label>
-                </li>
-                <li class="checkbox">
-                  <label>
-                    <input name="prefer" value="10" type="checkbox" class="userRatings">Fórum
-                  </label>
-                </li>
-                <li class="checkbox">
-                  <label>
-                    <input name="prefer" value="11" type="checkbox" class="userRatings">Cursos Adicionais
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </div>  
-          <div class="rowTab">
-            <div class="labels">
-              <label for="comments">Gostaria de deixar algum comentário ou sugestão?</label>
-            </div>
-            <div class="rightTab">
-              <textarea id="comments" class="input-field" name="comment">Digite aqui...
-              </textarea>
-            </div>
+                <ul>
+                  <li class="radio">
+                    <label>
+                      <input name="radio-buttons" value="1" type="radio" class="userRating">Com certeza 
+                    </label>
+                  </li>
+                  <li class="radio">
+                    <label>
+                      <input name="radio-buttons" value="2" type="radio" class="userRating">Talvez 
+                    </label>
+                  </li>
+                  <li class="radio">
+                    <label>
+                      <input name="radio-buttons" value="3" type="radio" class="userRating">Não 
+                    </label>
+                  </li>
+                </ul> 
+                <div class="labels">
+                  <label for="dropdownPreferences">O que você prefere em nossa plataforma?</label>
+                </div>
+                <div class="rightTab">
+                  <select id="dropdownPreferences" name="oQueUsuarioPrefere" class="dropdown">
+                    <option disabled value>Selecione uma opção</option>
+                    <option value="challenge">Desafios</option>
+                    <option value="project">Projetos</option>
+                    <option value="community">Comunidade</option>
+                    <option value="openSource">Open Source</option>
+                    <option value="other">Outro</option>
+                  </select>
+                </div>    
+              </div>
+            </div>  
+            <div class="rowTab">
+              <div class="labels">
+                <label for="improvedPreferences">
+                  Itens que podem ser melhorados no futuro.
+                  <br>
+                  (É possível escolher mais de uma opção):
+                </label>
+              </div>
+              <div class="rightTab">
+                <ul id="improvedPreferences">
+                  <li class="checkbox">
+                    <label>
+                      <input name="prefer" value="1" type="checkbox" class="userRatings">Projetos Front-end
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <label>
+                      <input name="prefer" value="2" type="checkbox" class="userRatings">Projetos Back-end
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <label>
+                      <input name="prefer" value="3" type="checkbox" class="userRatings">Visualização de dados
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <label>
+                      <input name="prefer" value="4" type="checkbox" class="userRatings">Challenges
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <label>
+                      <input name="prefer" value="5" type="checkbox" class="userRatings">Comunidade Open Source
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <label>
+                      <input name="prefer" value="6" type="checkbox" class="userRatings">Salas de ajuda
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <label>
+                      <input name="prefer" value="7" type="checkbox" class="userRatings">Vídeos
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <label>
+                      <input name="prefer" value="8" type="checkbox" class="userRatings">Meetups
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <label>
+                      <input name="prefer" value="9" type="checkbox" class="userRatings">Wiki
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <label>
+                      <input name="prefer" value="10" type="checkbox" class="userRatings">Fórum
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <label>
+                      <input name="prefer" value="11" type="checkbox" class="userRatings">Cursos Adicionais
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>  
+            <div class="rowTab">
+              <div class="labels">
+                <label for="comments">Gostaria de deixar algum comentário ou sugestão?</label>
+              </div>
+              <div class="rightTab">
+                <textarea rows="4" cols="30" placeholder="Digite aqui..." id="comments" class="input-field" name="comment"></textarea>
+              </div>
           </div>
           
           <button>Enviar</button>
