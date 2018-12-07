@@ -1,18 +1,22 @@
 #top-bar {
   position: fixed;
-  left: 50px;
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #20c997;
+  
 
 }
 
 #top-bar img {
-  width: 40px;
-  height: 40px;
-  margin-top: 20px;
+  float: left;
+  margin-top: 10px;
+  width: 45px;
+  
+  
 }
 
 #top-bar h1 {
-  float: right;
-  margin-top: 20px;
-  margin-left: 30px;
+  text-align: center;
+  margin: 0 auto;
 }
 
