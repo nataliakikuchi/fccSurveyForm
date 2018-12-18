@@ -1,7 +1,7 @@
 #top-bar {
-  position: fixed;
+  position: static;
   width: 100%;
-  padding: 20px 30px;
+  padding: 12px 28px;
   background-color: #20c997;
   z-index: 3;
   
@@ -11,7 +11,7 @@
 #top-bar img {
   float: left;
   margin-top: 10px;
-  width: 45px;
+  width: 40px;
   
   
 }
@@ -19,5 +19,16 @@
 #top-bar h1 {
   text-align: center;
   margin: 0 auto;
+  font-size: 40px;
 }
 
+@media (min-width: 760px) {
+  #top-bar {
+    position: fixed;
+    padding: 20px 30px;
+
+ }
+  #top-bar img {
+    width: 45px;
+  }
+}

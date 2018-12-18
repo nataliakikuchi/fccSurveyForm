@@ -1,8 +1,17 @@
+/*Estilo para mobile first*/
+
 body {
   text-align: center;
 }
 
 main {
-  padding-top: 120px;
+  padding-top: 10px;
 }
 
+/*Estilo para iPad e desktop - tudo o que quero que mude nesses dispositivos coloco aqui*/
+
+@media (min-width: 760px) {
+  main {
+    padding-top: 120px;
+  }
+}
