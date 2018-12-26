@@ -1,18 +1,31 @@
-#top-bar {
-  position: fixed;
-  left: 50px;
-
+/*Estilo para mobile first*/
+.top-bar {
+  width: 100%;
+  padding: 12px 28px;
+  background-color: #20c997;
 }
 
-#top-bar img {
+.top-bar img {
+  float: left;
+  margin-top: 10px;
   width: 40px;
-  height: 40px;
-  margin-top: 20px;
 }
 
-#top-bar h1 {
-  float: right;
-  margin-top: 20px;
-  margin-left: 30px;
+.top-bar h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 60px;
 }
 
+/*Estilo para iPad e desktop - tudo o que quero que mude nesses dispositivos coloco aqui*/
+@media (min-width: 760px) {
+  .top-bar {
+    position: fixed;
+    padding: 20px 30px;
+ }
+
+  .top-bar img {
+    width: 45px;
+    margin-left: 30px;
+  }
+}

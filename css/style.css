@@ -1,3 +1,18 @@
+/*Estilo para mobile first*/
+
 body {
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+  padding-top: 10px;
+}
+
+/*Estilo para iPad e desktop - tudo o que quero que mude nesses dispositivos coloco aqui*/
+
+@media (min-width: 760px) {
+  main {
+    padding-top: 120px;
+  }
 }
