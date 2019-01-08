@@ -1,20 +1,19 @@
 /*Estilo para mobile first*/
 .top-bar {
   width: 100%;
-  padding: 12px 28px;
   background-color: #20c997;
 }
 
 .top-bar img {
   float: left;
-  margin-top: 10px;
-  width: 40px;
+  margin: 10px;
+  width: 30px;
 }
 
 .top-bar h1 {
   text-align: center;
   margin: 0 auto;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 /*Estilo para iPad e desktop - tudo o que quero que mude nesses dispositivos coloco aqui*/
@@ -27,5 +26,9 @@
   .top-bar img {
     width: 45px;
     margin-left: 30px;
+  }
+
+  .top-bar h1 {
+    font-size: 70px;
   }
 }
