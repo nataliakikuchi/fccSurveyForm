@@ -32,6 +32,27 @@ ul {
   margin: 0;
 }
 
+button {
+  width: 100px;
+  padding: 5px;
+  border-radius: 50px 20px; 
+  background-color: aquamarine;
+  box-shadow: 0 5px #999;
+  margin-bottom: 10px;
+}
+
+.buttonSend {
+  margin: auto;
+  width: 200px;
+  text-align: center;  
+}
+
+button:active {
+  background-color: lawngreen;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}  
+
 /*Estilo para iPad e desktop - tudo o que quero que mude nesses dispositivos coloco aqui*/
 
 @media (min-width: 760px) {
