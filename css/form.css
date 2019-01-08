@@ -1,0 +1,87 @@
+/*Estilo para mobile first*/
+
+.full-form {
+  background-color: white;
+  padding: 10px;
+  margin: 0 25px;
+}
+
+.personalInfo__label {
+  margin: 15px 0;
+}
+
+.personalInfo__input input {
+  width: 80%;
+}
+
+#zipCode {
+  margin-bottom: 15px;
+}
+
+.generalInfo__input {
+  margin: 20px 0;
+}
+
+/*Estilo para iPad e desktop - tudo o que quero que mude nesses dispositivos coloco aqui*/
+
+@media (min-width: 760px) {
+  .full-form {
+    margin: 30px 80px;
+  }
+
+  .personalInfo {
+    margin: 0 100px 0 100px;
+    text-align: left;
+  }
+
+  .personalInfo__label {
+   display: inline-block;
+   width: 100px;
+   margin-right: 40px;
+ }
+
+  .personalInfo__input {
+    display: inline-block;
+    width: 250px;
+  }
+
+  .personalInfo__input input {
+    width: 100%;
+  }
+
+  .personalInfo__wrapper {
+    width: 400px;
+    margin: auto;
+  }
+
+  .generalInfo {
+    text-align: left;
+  }
+
+  .generalInfo__wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .generalInfo__label {
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: top;
+    margin-top: 18px;
+  }
+
+  .generalInfo__label--recommendation-question label {
+    margin-top: 20px;
+  }
+  .generalInfo__input {
+    display: inline-block;
+  }
+
+  .generalInfo__field {
+    margin: 0 100px 0 120px;
+  }
+
+  .generalInfo__improvedPreferences {
+    margin: 0;
+  }
+}
