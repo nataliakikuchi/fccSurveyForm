@@ -29,4 +29,14 @@ cepInput.addEventListener("keyup", function() {
   }
 });
 
+//script para inserção do mapa do Google Maps
 
+//Inicia e adiciona o mapa
+function initMap() {
+  //Localização
+  const japao = {lat: 31.681995, lng: 120.3034471};
+  //Mapa centralizado na localização. O new constrói o objeto que representa o mapa e o insere no elemento que passei como parâmetro, a div com a classe map
+  const map = new google.maps.Map(document.querySelector('.map'), {zoom:4, center: japao});
+  //Posicionador na localização. O ícone de localização
+  const maker = new google.maps.Marker({position: japao, map: map});
+}
